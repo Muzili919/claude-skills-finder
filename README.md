@@ -39,9 +39,11 @@ python ~/.claude/skills/claude-skills-finder/skill/search.py --json "testing" --
 
 ### 2. As a web page (no install)
 
-Open `web/index.html` in any browser, or host it on GitHub Pages — pure vanilla JS, calls GitHub API directly.
+Three ways to run it:
 
-Live hosted version: [muzi.studio/tools/claude-skills](https://muzi.studio/tools/claude-skills)
+- **Live (this repo)**: <https://muzili919.github.io/claude-skills-finder/>
+- **Live (enhanced version)**: <https://muzi.studio/tools/claude-skills>
+- **Local**: open `docs/index.html` in any browser — pure vanilla JS, no build step.
 
 ## Examples
 
@@ -71,8 +73,8 @@ The web version always uses unauth (browser CORS) — if you hit the limit, swit
 
 ## Zero dependencies
 
-- `skill/search.py` — Python 3 stdlib only (no pip install)
-- `web/index.html` — Single HTML file, vanilla JS, no build step
+- `skill/search.py` — Python 3 stdlib only (no pip install). Auto-detects `certifi` if you have it for SSL on macOS python.org installs.
+- `docs/index.html` — Single HTML file, vanilla JS, no build step. Same file is served by GitHub Pages.
 
 ## License
 
