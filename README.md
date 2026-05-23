@@ -33,8 +33,8 @@ The skill auto-triggers and runs `search.py` for you.
 You can also run it directly:
 
 ```bash
-python ~/.claude/skills/claude-skills-finder/skill/search.py "seo content"
-python ~/.claude/skills/claude-skills-finder/skill/search.py --json "testing" --limit 5
+python ~/.claude/skills/claude-skills-finder/scripts/search.py "seo content"
+python ~/.claude/skills/claude-skills-finder/scripts/search.py --json "testing" --limit 5
 ```
 
 ### 2. As a web page (no install)
@@ -48,7 +48,7 @@ Three ways to run it:
 ## Examples
 
 ```bash
-$ python skill/search.py "seo content"
+$ python scripts/search.py "seo content"
 
 ★  4321  someone/claude-code-seo-skill
          A Claude Code skill for SEO audits, keyword research, and content briefs.
@@ -66,15 +66,16 @@ GitHub's unauthenticated search allows **60 requests/hour per IP**. For 5000/hr:
 
 ```bash
 export GITHUB_TOKEN=ghp_your_token_here
-python skill/search.py "your query"
+python scripts/search.py "your query"
 ```
 
 The web version always uses unauth (browser CORS) — if you hit the limit, switch to the CLI.
 
 ## Zero dependencies
 
-- `skill/search.py` — Python 3 stdlib only (no pip install). Auto-detects `certifi` if you have it for SSL on macOS python.org installs.
+- `scripts/search.py` — Python 3 stdlib only (no pip install). Auto-detects `certifi` if you have it for SSL on macOS python.org installs.
 - `docs/index.html` — Single HTML file, vanilla JS, no build step. Same file is served by GitHub Pages.
+- `SKILL.md` at repo root — so `git clone … ~/.claude/skills/claude-skills-finder` makes it instantly discoverable by Claude Code's skill loader.
 
 ## License
 

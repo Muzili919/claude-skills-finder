@@ -19,22 +19,22 @@ Invoke this skill when the user asks any of:
 
 ## How to use
 
-Run the bundled `search.py` from this skill's directory:
+Run the bundled `scripts/search.py` from this skill's directory:
 
 ```bash
-python search.py "<keywords>"
+python scripts/search.py "<keywords>"
 ```
 
 ### Examples
 
 | Goal | Command |
 |---|---|
-| SEO / content skills | `python search.py "seo content"` |
-| Test automation | `python search.py "testing automation"` |
-| Frontend / web | `python search.py "frontend web"` |
-| DevOps / deploy | `python search.py "devops deploy"` |
-| JSON output for piping | `python search.py --json "research"` |
-| Top 5 only | `python search.py --limit 5 "data"` |
+| SEO / content skills | `python scripts/search.py "seo content"` |
+| Test automation | `python scripts/search.py "testing automation"` |
+| Frontend / web | `python scripts/search.py "frontend web"` |
+| DevOps / deploy | `python scripts/search.py "devops deploy"` |
+| JSON output for piping | `python scripts/search.py --json "research"` |
+| Top 5 only | `python scripts/search.py --limit 5 "data"` |
 
 ### Ranking
 
